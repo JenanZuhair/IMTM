@@ -76,7 +76,7 @@
                     <h2>Interior</h2>
                     <p>Your interior content goes here...</p>
                     <div>
-                        <a href="Interior.html">Read more about Interior design</a>
+                        <a href="home_improvement_ideas.html">Read more about Interior design</a>
                     </div>
                 </section>
             </div>
@@ -127,7 +127,10 @@ function filterLinks(event) {
 
 // Function to hide search results when focus is lost
 function hideResults() {
-    searchResults.style.display = 'none';
+    setTimeout(function() {
+  searchResults.style.display = 'none';
+}, 500);
+    
 }
 
 // Event listener for search box input
