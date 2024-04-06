@@ -3,63 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    <title>Improvement articles for home maintenance</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Improvement articles for home maintenance</title>
+    
 </head>
 <body>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #bd5d5d;
-        }
-
-        #search-box {
-            margin-top: 20px;
-            padding: 10px;
-            width: 300px;
-        }
-
-        #search-results {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            z-index: 1;
-        }
-
-        #search-results a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        #search-results a:hover {
-            background-color: #ddd;
-        }
-    </style>
-
-    <header>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a  class="navbar-brand"> <img style="height: 50px; display: inline;width: auto;" src="img/logo.png" alt="" class="navbar-brand"> IMTM</a>
+          
+          <form class="d-flex">
+            <input id="search-box" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <div id="search-results"></div>
+          </form>
+        </div>
+      </nav>
+    <!-- <header>
         <h1>What service do you Need</h1>
         <input type="text" id="search-box" placeholder="Search">
         <div id="search-results"></div>
-    </header>
-    <section>
-        <div id="slider-container">
-            <div id="slider">
-                <div class="slide"><img src="image1.jpg" alt="Image 1"></div>
-                <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
-                <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
-                <!-- Add more slides as needed -->
-            </div>
-            <div id="next-btn">&#9654;</div>
-            <script src="article.js"></script>
+    </header> -->
+<!-- 
+    <div" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators" style="background-color: rgba(255, 0, 0, 0.33);" >
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </section>
-
+        <div style="" class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="height: 150px;" src="img/img4.png"  class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 150px;" src="img/img4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img  style="height: 150px;" src="img/img4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev"    type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" style="background-color: red;" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon"  style="background-color: red;"  aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+      
+        <div class="row justify-content-center my-md-3">
+          <div class="col-12 col-md-6">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 400px; object-fit: cover;" src="img/img4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img style="height: 400px; object-fit: cover;" src="img/img1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img style="height: 400px; object-fit: cover;" src="img/img2.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+      
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
@@ -91,54 +111,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const searchBox = document.getElementById('search-box');
-const searchResults = document.getElementById('search-results');
-
-// Object of available links
-const links = {
-    'Home Improvement Ideas': 'Elevate Your Living Space: Interior Home Improvement Ideas',
-    'Upgrade Lighting Fixtures': 'Upgrade Lighting Fixtures',
-    'Revamp Flooring': 'Revamp Flooring',
-    'Kitchen Renovation': 'Kitchen Renovation',
-    'Bathroom Remodeling': 'Bathroom Remodeling',
-    // Add more links as needed
-};
-
-// Function to filter links based on search input
-function filterLinks(event) {
-    const searchText = event.target.value.toLowerCase();
-    searchResults.innerHTML = '';
-
-    // Filter links based on search input
-    const filteredLinks = Object.keys(links).filter(link => link.toLowerCase().includes(searchText));
-
-    // Display filtered links
-    filteredLinks.forEach(link => {
-        const anchor = document.createElement('a');
-        anchor.textContent = links[link];
-        anchor.href = `${link.replace(/\s+/g, '_').toLowerCase()}.html`; // Convert link to lowercase and replace spaces with underscores
-        searchResults.appendChild(anchor);
-    });
-
-    // Show or hide search results based on filtered links
-    searchResults.style.display = filteredLinks.length ? 'block' : 'none';
-}
-
-// Function to hide search results when focus is lost
-function hideResults() {
-    setTimeout(function() {
-  searchResults.style.display = 'none';
-}, 500);
-    
-}
-
-// Event listener for search box input
-searchBox.addEventListener('input', filterLinks);
-// Event listener for search box blur
-searchBox.addEventListener('blur', hideResults);
-
-    </script>
+  <script src="article.js"></script>
 
     <footer>
         <p>&copy; 2024 IMTM Home maintenance training Application. All rights reserved.</p>

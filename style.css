@@ -63,13 +63,14 @@ footer {
     color: #dc3a3a;
     padding: 10px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+ 
     width: 100%;
 }
 #search-results {
     display: none;
     position: absolute;
+    top: 100%;
+    margin-top: 2s0px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1;
